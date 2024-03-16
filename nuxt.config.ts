@@ -3,6 +3,6 @@ export default defineNuxtConfig({
   devtools: { enabled: true },
   modules: ['@nuxt/ui', '@nuxtjs/color-mode', '@nuxt/image',],
   colorMode: {
-    classSuffix: '',
+    preference: 'light',
   },
 });

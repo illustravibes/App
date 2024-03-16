@@ -10,9 +10,9 @@
 
 <style scoped>
 .app {
-  @apply bg-neutral-50;
+  @apply bg-white dark:bg-black;
   .container{
-    @apply bg-white border-x border-gray-200 px-24;
+    @apply bg-white dark:bg-zinc-900 border-x border-gray-100 dark:border-zinc-700 px-24 shadow-lg;
   }
 }
 </style>
