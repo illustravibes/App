@@ -1,37 +1,37 @@
 <template>
   <div class="social-media">
-    <UButton
-      v-for="(socialMedia, index) in socialMedias"
-      :key="index"
-      :icon="socialMedia.icon"
-      :to="socialMedia.link"
-      color="white"
-      target="_blank"
-    />
+    <div class="icon" v-for="(item, index) in socialMedias" :key="index">
+      <a :href="item.url" target="_blank">
+        <UIcon :name="item.icon" dynamic />
+      </a>
+    </div>
   </div>
 </template>
 
 <script setup lang="ts">
 const socialMedias = [
   {
-    icon: 'i-heroicons-sun',
-    link: 'http://twitter.com/illustravibes',
+    icon: 'i-simple-icons-x',
+    url: 'https://x.com/illustravibes',
   },
 
   {
-    icon: 'i-heroicons-sun',
-    link: 'http://instagram.com/illustravibes',
+    icon: 'i-simple-icons-instagram',
+    url: 'https://instagram.com/illustravibes',
   },
 
   {
-    icon: 'i-heroicons-sun',
-    link: 'https://github.com/illustravibes',
+    icon: 'i-simple-icons-github',
+    url: 'https://github.com/illustravibes',
   },
 ];
 </script>
 
 <style scoped>
 .social-media {
-  @apply flex gap-4;
+  @apply flex gap-8;
+  .icon {
+    @apply hover:size-5;
+  }
 }
 </style>

@@ -1,13 +1,14 @@
 <template>
-  <div class="dark-mode">
-    <UButton icon="i-heroicons-sun" color="white" />
-  </div>
+  <UButton class="dark-mode-button" icon="i-heroicons-sun-solid" color="black" size="lg" />
 </template>
 
 <script setup lang="ts"></script>
 
 <style scoped>
-.navigation {
-  @apply flex w-fit px-4 py-1 gap-4 border rounded-2xl;
+.dark-mode-button {
+  @apply rounded-full px-3;
+.dark-mode-button:hover {
+  color:blue;
+}
 }
 </style>

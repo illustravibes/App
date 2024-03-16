@@ -1,6 +1,7 @@
 <template>
   <div class="article-collection-card">
     <div class="date">
+      <div class="h-4 w-0.5 rounded-full bg-zinc-400 dark:bg-zinc-500"   />
       <p>{{ date }}</p>
     </div>
 
@@ -51,20 +52,19 @@ defineProps({
   width: 560px;
   height: 230px;
 
-  @apply flex flex-col gap-2 border rounded-2xl hover:bg-slate-200 p-4;
+  @apply flex flex-col gap-2 hover:bg-zinc-100 p-8 rounded-2xl;
 
-  .date{
-    @apply text-sm font-light;
+  .date {
+    @apply flex items-center text-sm text-zinc-400 dark:text-zinc-500 gap-3.5;
   }
-
   .title {
-    @apply text-base font-bold;
+    @apply text-base font-semibold;
   }
   .summary {
     @apply text-sm font-light;
   }
   .detail {
-    @apply text-sm text-green-700 pt-8;
+    @apply text-sm pt-4;
   }
 }
 </style>
