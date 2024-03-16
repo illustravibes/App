@@ -1,7 +1,7 @@
 <template>
   <AppHeader />
-  <SpeedInsights/>
   <slot />
+  <SpeedInsights/>
   <AppFooter />
 </template>
 
