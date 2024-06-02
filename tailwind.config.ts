@@ -1,14 +1,11 @@
-/** @type {import('tailwindcss').Config} */
-export default {
-  darkMode: 'class',
-  content: [
-    './pages/**/*.{html,js}',
-    './components/**/*.{html,js}',
-  ],
+import type { Config } from "tailwindcss";
+import colors from "tailwindcss/colors";
+
+export default <Partial<Config>>{
   theme: {
     extend: {
       colors: {
-        "vibes":{
+        vibes: {
           "50": "#0007f5",
           "100": "#0007eb",
           "200": "#0007e1",
@@ -19,10 +16,16 @@ export default {
           "700": "#0007af",
           "800": "#0007a5",
           "900": "#00079b",
-          "950": "#000791"
-        },        
-      }
+          "950": "#000791",
+        },
+      },
+    },
+    container: {
+      padding: {
+        lg: "4rem",
+        xl: "4rem",
+        "2xl": "8rem",
+      },
     },
   },
-  plugins: [],
 };

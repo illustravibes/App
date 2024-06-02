@@ -1,8 +1,5 @@
 // https://nuxt.com/docs/api/configuration/nuxt-config
 export default defineNuxtConfig({
-  devtools: { enabled: true },
-  modules: ['@nuxt/ui', '@nuxtjs/color-mode', '@nuxt/image',],
-  colorMode: {
-    preference: 'light',
-  },
-});
+  modules: ["@nuxtjs/tailwindcss", "@nuxt/image", ],
+  pages: true,
+})
